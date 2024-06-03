@@ -1,0 +1,78 @@
+* {
+    font-family: 'Zeyada';
+    font-weight: bold;
+    font-size: 32px;
+    color: white;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(25, 25, 25);
+}
+
+
+.calculator {
+    margin-top: 32px;
+    width: 500px;
+    height: 750px;
+    border: 4px solid rgb(155, 155, 155);
+    border-radius: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0px 0px 10px 2px hsla(0, 27%, 46%, 0.75);
+    background-color: rgb(37, 38, 42);
+}
+
+
+button {
+    padding: 10px 0px 0px;
+    width: 100px;
+    border-radius: 25%;
+    background-color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+.display {
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: end;
+    padding: 16px;
+    border-bottom: 3px solid rgb(236, 234, 234);
+    border-radius: 32px;
+    outline:4px solid rgb(155, 155, 155);
+    background-color: rgb(0, 42, 0);
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: space-between;
+    justify-content: space-between;
+    gap: 16px;
+    flex-grow: 1;
+    padding: 24px;
+}
+
+
+.operators,
+.clr,
+.del,
+.percentage,
+.theme {
+  color: darkorange;
+}
+
+.equal {
+    background-color: darkorange;
+}
+
+
+button:active {
+    top: 6px;
+    background-color: #252525;
+}
